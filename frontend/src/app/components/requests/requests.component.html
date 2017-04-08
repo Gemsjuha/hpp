@@ -1,4 +1,4 @@
-<div class="Container">
+<div class="Container"}}>
 
     <!-- Modal -->
     <add-requests-modal></add-requests-modal>
@@ -8,18 +8,24 @@
         <thead>
             <tr>
                 <th>Status</th>
-                <th>Vehicule ID</th>
-                <th>Date</th>
+                <th>License Plate</th>
+                <th>Customer Name</th>
+                <th>Summary</th>
                 <th>Description</th>
+                <th>Create Date</th>
+                <th>Last Modify Date</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let request of requests; let i = index" class="{{request.status}}">
                 <td>{{request.status}}</td>
-                <td>{{request.vehiculeId}}</td>
-                <td>{{request.date}}</td>
+                <td>{{request.licensePlate}}</td>
+                <td>{{request.customerName}}</td>
+                <td>{{request.summary}}</td>
                 <td>{{request.description}}</td>
+                <td>{{request.createDate}}</td>
+                <td>{{request.lastModifyDate}}</td>
                 <td>
                     <div class="btn-group">
                         <button class="btn btn-default btn-sm glyphicon glyphicon-option-vertical" data-toggle="tooltip" title="Actions"></button>

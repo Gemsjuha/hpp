@@ -15,7 +15,7 @@ export class RequestsComponent implements OnInit{
   pageTitle: string = "Requests";
 
   constructor(private requestService : RequestService) { }
-  
+
   getRequests() : void {
     this.requestService
       .getRequests()

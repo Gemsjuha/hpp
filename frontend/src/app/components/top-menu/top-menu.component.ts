@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
     templateUrl : './top-menu.component.html'
 })
 
-export class TopMenuComponent { }
+export class TopMenuComponent {
+    public hide() : boolean{
+        return false;
+    }
+}
 
 

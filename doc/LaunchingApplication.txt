@@ -1,0 +1,11 @@
+Lauching the application
+
+1- Launch Node.js command prompt (double click)
+2- Inside the newly command prompt window, navigate to d:\projects\hp\frontend
+3 -Type comnad npm start, to start the server and open website (localhost:3002)
+
+Useful command:
+
+Node Version : node - v
+NPM Version : npm -v
+
