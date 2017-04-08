@@ -1,0 +1,46 @@
+<!-- Button -->
+<div class="btn-group  col-md-2" role="group" aria-label="...">
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus"></span> Add</button>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+    <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4><span class="glyphicon glyphicon-tasks"></span> New Request</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--<div class="form-group">
+                        <label for="customer"><span class="glyphicon glyphicon-user"></span> Customer</label>
+                            <input type="text" class="form-control" id="customer" placeholder="Enter customer name">
+                    </div>-->
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-addon">Text</span>
+                        <input id="description" type="text" class="form-control" name="description" placeholder="Enter description">
+                    </div>
+                    <br>
+                    <!--<div class="form-group">
+                        <label for="description">Description</label>
+                            <input type="text" class="form-control" id="description" placeholder="Enter description">
+                    </div>-->
+                    <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-ok"></span> Done</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<!--<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">-->
+<nav class="navbar navbar-inverse navbar-fixed-top">    
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">HP Performance</a>
+        </div>
+        <ul class="nav navbar-nav" routerLinkActive="active">
+            <li class="nav-item"><a class="nav-link" routerLink=""><span class="glyphicon glyphicon-menu-hamburger" data-toggle="tooltip" title="Menu"></span></a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="home"><span class="glyphicon glyphicon-home" data-toggle="tooltip" title="Home"></span> Home</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="about"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" title="About"></span> About</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="requests"><span class="glyphicon glyphicon-tasks" data-toggle="tooltip" title="Request"></span> Requests</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink=""><span class="glyphicon glyphicon-shopping-cart" data-toggle="tooltip" title="Orders"></span> Orders</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="customers"><span class="glyphicon glyphicon-user" data-toggle="tooltip" title="Customer"></span> Customers</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="suppliers"><span class="glyphicon glyphicon-wrench" data-toggle="tooltip" title="Supplier"></span> Suppliers</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink=""><span class="glyphicon glyphicon-dashboard" data-toggle="tooltip" title="Dashboard"></span> Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink=""><span class="glyphicon glyphicon-cog" data-toggle="tooltip" title="Admin"></span> Admin</a></li>  
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+        </ul>
+        <!--<div class="lang-bar">
+            <a (click)="changeLang('en')">EN</a>
+            <a (click)="changeLang('fr')">FR</a>
+        </div>-->
+    </div>
+</nav>
+
+<router-outlet></router-outlet>

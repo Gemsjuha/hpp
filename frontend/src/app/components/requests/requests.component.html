@@ -1,0 +1,43 @@
+<div class="Container">
+
+    <!-- Modal -->
+    <add-requests-modal></add-requests-modal>
+
+    <!-- Table -->
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Status</th>
+                <th>Vehicule ID</th>
+                <th>Date</th>
+                <th>Description</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let request of requests; let i = index" class="{{request.status}}">
+                <td>{{request.status}}</td>
+                <td>{{request.vehiculeId}}</td>
+                <td>{{request.date}}</td>
+                <td>{{request.description}}</td>
+                <td>
+                    <div class="btn-group">
+                        <button class="btn btn-default btn-sm glyphicon glyphicon-option-vertical" data-toggle="tooltip" title="Actions"></button>
+                        <button class="btn btn-default btn-sm glyphicon glyphicon-eye-open" data-toggle="tooltip" title="Preview" (click)="detailCustomer(i)"></button>
+                        <button class="btn btn-default btn-sm glyphicon glyphicon-edit" data-toggle="tooltip" title="Edit" (click)="editCustomer(i)"></button>
+                        <button class="btn btn-default btn-sm glyphicon glyphicon-trash" data-toggle="tooltip" title="Delete" (click)="deleteCustomer(i)"></button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="text-center">    
+        <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ul>
+    </div>
+</div>

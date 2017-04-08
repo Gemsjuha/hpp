@@ -1,0 +1,8 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+/* fix: bootstrap navbar fixed top overlapping site */
+body { padding-top: 70px; }

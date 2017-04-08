@@ -1,0 +1,2 @@
+D:\projects\hp\HP\HP\bin\Debug\HP.exe.config
+D:\projects\hp\backend\HP\bin\Debug\HP.exe.config

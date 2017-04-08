@@ -1,0 +1,60 @@
+<div class="Container">
+    <!--<div class="panel panel-default">
+        <div class="panel-heading">
+            Customers
+        </div>
+        <div class="panel-body">-->
+            <div class="row">
+                <div class="col-md-2">Filter by:</div>
+                <div class="col-md-4">
+                    <input type="text" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Filtered by:</h3>
+                </div>
+            </div>    
+            <div class="table-responsive">   
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Last Name</th>
+                            <th>First Name</th>
+                            <th>Phone Number</th>
+                            <th>Email</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let customer of customers; let i = index">
+                            <td>{{customer.lastName}}</td>
+                            <td>{{customer.firstName}}</td>
+                            <td>{{customer.phone}}</td>
+                            <td>{{customer.email}}</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-default btn-sm glyphicon glyphicon-option-vertical" data-toggle="tooltip" title="Actions"></button>
+                                    <button class="btn btn-default btn-sm glyphicon glyphicon-eye-open" data-toggle="tooltip" title="Preview" (click)="detailCustomer(i)"></button>
+                                    <button class="btn btn-default btn-sm glyphicon glyphicon-edit" data-toggle="tooltip" title="Edit" (click)="editCustomer(i)"></button>
+                                    <button class="btn btn-default btn-sm glyphicon glyphicon-envelope" data-toggle="tooltip" title="Send Message" (click)="sendMessageCustomer(i)"></button>
+                                    <button class="btn btn-default btn-sm glyphicon glyphicon-trash" data-toggle="tooltip" title="Delete" (click)="deleteCustomer(i)"></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-center">    
+                <ul class="pagination">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                </ul>
+            </div>
+        <!--</div>-->
+        <!--<div class="panel-footer">Footer</div>-->
+    <!--</div>-->
+</div>
