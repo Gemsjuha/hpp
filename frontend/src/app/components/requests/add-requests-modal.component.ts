@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Request } from "../../classes/request"
 @Component({
   moduleId: module.id,  
   selector: 'add-requests-modal',
